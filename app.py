@@ -77,7 +77,7 @@ if "role" not in st.session_state:
 def consultar_gemini(prompt):
     """Envía una solicitud al modelo con las reglas de entrevista."""
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=INSTRUCCIONES,
